@@ -1,2 +1,5 @@
 # react-component-preset
-react component preset
+
+## stack
+
+- pnpm, react, esbuild, turborepo
