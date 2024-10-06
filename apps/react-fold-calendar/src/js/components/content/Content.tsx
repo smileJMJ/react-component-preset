@@ -9,9 +9,7 @@ const Content = () => {
   const { dataMap, dataByDateMap, getScheduleData } = useScheduleContext()!;
   const scheduleData = useMemo(() => getScheduleData(selectedDate, dataMap, dataByDateMap), [selectedDate, dataMap, dataByDateMap]);
 
-  console.log('==scheduleData==', scheduleData);
-
-  return <div className="schedule-content">{Array.isArray(scheduleData) && scheduleData?.length > 0 ? <List data={scheduleData} /> : <NoData />}</div>;
+  return <div className="rfc-content">{Array.isArray(scheduleData) && scheduleData?.length > 0 ? <List data={scheduleData} /> : <NoData />}</div>;
 };
 
 export default Content;
