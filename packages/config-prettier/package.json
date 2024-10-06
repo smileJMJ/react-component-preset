@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "name": "@rcp/config-prettier",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".prettier.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
+}

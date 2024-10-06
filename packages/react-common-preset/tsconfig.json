@@ -1,0 +1,18 @@
+{
+  "extends": "@rcp/config-typescript/tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "declarationDir": "dist",
+    "baseUrl": "src/",
+    "paths": {
+      "@components/*": ["js/components/*"],
+      "@constants/*": ["js/constants/*"],
+      "@utils/*": ["js/utils/*"],
+      "@type/*": ["js/types/*"],
+      "@img/*": ["assets/img/*"],
+      "@svg/*": ["assets/svg/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,19 @@
+{
+  "calendar": {
+    "btnCalendarText": "Change calendar type.",
+    "prevMonth": "last month",
+    "nextMonth": "next month",
+    "prevWeek": "last week",
+    "nextWeek": "next week",
+    "sunday": "Sun",
+    "monday": "Mon",
+    "tuesday": "Tue",
+    "wednesday": "Wed",
+    "thursday": "Thu",
+    "friday": "Fri",
+    "saturday": "Sat"
+  },
+  "content": {
+    "nodata": "There are no registered schedules."
+  }
+}

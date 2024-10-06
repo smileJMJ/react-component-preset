@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "name": "react-component-preset",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "npx turbo run tsc",
+    "dev": "npx turbo run dev",
+    "build": "npx turbo run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@9.6.0",
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.11"
+  }
+}

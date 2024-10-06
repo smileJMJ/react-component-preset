@@ -1,0 +1,19 @@
+{
+  "calendar": {
+    "btnCalendarText": "캘린더 타입 변경 버튼",
+    "prevMonth": "이전달",
+    "nextMonth": "다음달",
+    "prevWeek": "저번주",
+    "nextWeek": "다음주",
+    "sunday": "일",
+    "monday": "월",
+    "tuesday": "화",
+    "wednesday": "수",
+    "thursday": "목",
+    "friday": "금",
+    "saturday": "토"
+  },
+  "content": {
+    "nodata": "등록된 일정이 없습니다."
+  }
+}

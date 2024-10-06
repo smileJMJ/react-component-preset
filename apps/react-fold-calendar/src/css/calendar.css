@@ -1,0 +1,215 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Roboto:wght@400;500&display=swap');
+
+@import 'reset';
+
+.hidden {
+  display: block;
+  position: absolute;
+  left: -99999px;
+  top: -99999px;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.rfc-calendar {
+  position: relative;
+  z-index: 5;
+  min-width: 324px;
+}
+
+.rfc-calendar .rfc-header-ym {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.rfc-calendar .rfc-header-title {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.rfc-calendar .rfc-header-btn {
+  margin-left: 10px;
+}
+
+.rfc-calendar .rfc-header-btn button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #eaeaea;
+}
+
+.rfc-calendar .rfc-header-btn button::before {
+  display: inline-block;
+  content: '';
+  width: 6px;
+  height: 10px;
+  background-color: #404040;
+  mask-size: 100% 100%;
+  -webkit-mask-size: 100% 100%;
+  mask-position: center center;
+  -webkit-mask-position: center center;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+
+.rfc-calendar .rfc-header-btn button.btn-month-plus {
+  border-left: 0;
+}
+
+.rfc-calendar .rfc-header-btn button.btn-month-minus::before {
+  mask-image: url('@svg/icon-arrow-left.svg');
+  -webkit-mask-image: url('@svg/icon-arrow-left.svg');
+}
+
+.rfc-calendar .rfc-header-btn button.btn-month-plus::before {
+  mask-image: url('@svg/icon-arrow-right.svg');
+  -webkit-mask-image: url('@svg/icon-arrow-right.svg');
+}
+
+.rfc-calendar .rfc-header-day {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.rfc-calendar .rfc-header-day > * {
+  width: 30px;
+  text-align: center;
+  font-size: 16px;
+  color: #8e8e8e;
+  line-height: 23px;
+}
+
+.rfc-calendar .rfc-calendar-content {
+  padding-bottom: 30px;
+}
+
+.rfc-calendar .rfc-calendar-content .week {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rfc-calendar .rfc-calendar-content .calendar-week .date {
+  margin: 0;
+}
+
+.rfc-calendar .rfc-calendar-content .date {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin: 7px 0;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.rfc-calendar .rfc-calendar-content .date::before {
+  display: block;
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease-out;
+}
+
+.rfc-calendar .rfc-calendar-content .date button {
+  width: 100%;
+  height: 100%;
+}
+
+.rfc-calendar .rfc-calendar-content .date.saturday {
+  color: #0c06cf;
+}
+
+.rfc-calendar .rfc-calendar-content .date.sunday {
+  color: #ca3005;
+}
+
+.rfc-calendar .rfc-calendar-content .mark {
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  margin-left: -2px;
+  background-color: #333;
+  border-radius: 50%;
+}
+
+.rfc-calendar .rfc-calendar-content .selected {
+  color: #fff !important;
+  background-color: #333 !important;
+}
+
+.rfc-calendar .rfc-calendar-content .selected::before {
+  width: 100%;
+  height: 100%;
+}
+
+.rfc-calendar .rfc-calendar-content .today {
+  font-weight: 600;
+  color: #333;
+  background-color: #eee;
+}
+
+.rfc-calendar .rfc-calendar-btn {
+  margin-top: -30px;
+  padding-top: 12px;
+}
+
+.rfc-calendar .rfc-calendar-btn .btn-calendar {
+  display: block;
+  width: 100%;
+  padding-bottom: 14px;
+  text-align: center;
+}
+
+.rfc-calendar .rfc-calendar-btn .btn-calendar:active {
+  background: transparent;
+}
+
+.rfc-calendar .rfc-calendar-btn .btn-calendar-icon {
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  background-color: #333;
+  mask-image: url('@svg/icon-fold.svg');
+  -webkit-mask-image: url('@svg/icon-fold.svg');
+  mask-size: 100% 100%;
+  -webkit-mask-size: 100% 100%;
+  mask-position: center center;
+  -webkit-mask-position: center center;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  transform: rotate(180deg);
+}
+
+.rfc-calendar .rfc-calendar-btn .btn-calendar.fold .btn-calendar-icon {
+  transform: rotate(0deg);
+}
+
+@media screen and (min-width: 960px) {
+  .rfc-calendar .rfc-header-ym {
+    margin-bottom: 30px;
+  }
+
+  .rfc-calendar .rfc-header-day {
+    margin-bottom: 5px;
+  }
+
+  .rfc-calendar .rfc-calendar-content .mark {
+    bottom: -2px;
+  }
+}
