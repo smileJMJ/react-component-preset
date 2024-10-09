@@ -34,6 +34,7 @@
 
 .rfc-calendar .rfc-header-title {
   font-size: 24px;
+  font-weight: bold;
   line-height: 28px;
 }
 
@@ -47,14 +48,13 @@
   align-items: center;
   width: 32px;
   height: 32px;
-  border: 1px solid #eaeaea;
 }
 
 .rfc-calendar .rfc-header-btn button::before {
   display: inline-block;
   content: '';
-  width: 6px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   background-color: #404040;
   mask-size: 100% 100%;
   -webkit-mask-size: 100% 100%;
@@ -155,17 +155,17 @@
   display: block;
   position: absolute;
   left: 50%;
-  bottom: -8px;
+  bottom: -10px;
   width: 5px;
   height: 5px;
   margin-left: -2px;
-  background-color: #333;
+  background-color: #bd94fc;
   border-radius: 50%;
 }
 
 .rfc-calendar .rfc-calendar-content .selected {
   color: #fff !important;
-  background-color: #333 !important;
+  background-color: #4104a1 !important;
 }
 
 .rfc-calendar .rfc-calendar-content .selected::before {
@@ -175,21 +175,21 @@
 
 .rfc-calendar .rfc-calendar-content .today {
   font-weight: 600;
-  color: #fff;
+  color: inherit;
   background-color: transparent;
-  border: 1px solid #333;
+  border: 1px solid #4104a1;
   border-radius: 50%;
 }
 
 .rfc-calendar .rfc-calendar-btn {
-  margin-top: -20px;
+  margin-top: -18px;
   padding-top: 12px;
 }
 
 .rfc-calendar .rfc-calendar-btn .btn-calendar {
   display: block;
   width: 100%;
-  padding-bottom: 14px;
+  padding-bottom: 12px;
   text-align: center;
 }
 
@@ -200,7 +200,7 @@
 .rfc-calendar .rfc-calendar-btn .btn-calendar-icon {
   display: inline-block;
   width: 18px;
-  height: 10px;
+  height: 18px;
   background-color: #333;
   mask-image: url('@svg/icon-fold.svg');
   -webkit-mask-image: url('@svg/icon-fold.svg');
@@ -217,6 +217,18 @@
   transform: rotate(0deg);
 }
 
+.rfc-content {
+  min-height: 300px;
+  padding: 25px;
+  border-radius: 10px 10px 0 0;
+  background-color: #ede3ff;
+}
+
+.rfc-content-title .rfc-content-date {
+  font-size: 22px;
+  font-weight: bold;
+}
+
 .rfc-content-list ul {
   margin: 0;
   padding: 0;
@@ -224,7 +236,7 @@
 }
 
 .rfc-content-list li {
-  margin: 25px 0;
+  margin: 20px 0;
 }
 
 .rfc-content-list li h1 {

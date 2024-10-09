@@ -17,6 +17,6 @@
       "@svg/*": ["assets/svg/*"]
     }
   },
-  "include": ["src", "src/js/types/global.d.ts"],
+  "include": ["src", "src/js/types/global.d.ts", "../../packages/react-common-preset/src/js/utils/string.ts"],
   "exclude": ["node_modules"]
 }

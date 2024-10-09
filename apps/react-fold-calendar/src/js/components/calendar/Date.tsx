@@ -9,7 +9,7 @@ interface IDateProps {
 }
 
 const Date = ({ dateObj, hasMark }: IDateProps) => {
-  const { selectedDate, setSelectedDate, option } = useGlobalContext()!;
+  const { selectedDate, setSelectedDate } = useGlobalContext()!;
   const { date, day } = dateObj || {};
   const todayDateObj = setDateObj();
   const isToday = compareDateObj(dateObj, todayDateObj);
@@ -17,9 +17,6 @@ const Date = ({ dateObj, hasMark }: IDateProps) => {
 
   const handleClick = useCallback(() => {
     setSelectedDate(dateObj);
-    if (typeof option?.handleDateClick === 'function') {
-      option.handleDateClick();
-    }
   }, [dateObj]);
 
   return (

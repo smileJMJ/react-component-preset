@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, width=device-width, initial-scale=1.0" />
     <title>React-Fold-Calendar</title>
     <link rel="stylesheet" href="./dist/calendar.css" />
   </head>
@@ -16,9 +19,6 @@
         window.createReactFoldCalendar({
           useInitWeekType: true,
           useShowContent: true,
-          handleDateClick: (dateObj) => {
-            console.log('== click!! ==', dateObj);
-          },
           element: '#app-browser',
           data: [
             { startDate: new Date('2024/10/01 10:00')?.getTime(), endDate: new Date('2024/10/31 19:00')?.getTime(), period: 1, title: '10월 이벤트', description: '10월 정기 이벤트 입니다.' },

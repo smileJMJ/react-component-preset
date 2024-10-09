@@ -1,4 +1,4 @@
-import { setZeroPad } from './string';
+import { setZeroPad } from '../../../../../packages/react-common-preset/src/js/utils/string';
 import { DAY_LENGTH, CALC_DIR, MAX_MONTH, MIN_MONTH } from '@constants/calendar';
 import type { IDateObj } from '@type/date';
 

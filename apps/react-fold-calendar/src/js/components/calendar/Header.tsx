@@ -2,7 +2,7 @@ import { Fragment, useCallback } from 'react';
 import { useGlobalContext } from '@contexts/GlobalContext';
 import { CAL_TYPE, CALC_DIR } from '@constants/calendar';
 import { setCalcMonthDateObj, setCalcWeekDateObj } from '@utils/date';
-import { setZeroPad } from '@utils/string';
+import { setZeroPad } from '@rcp/react-common-preset/utils/string';
 import type { IDateObj } from '@type/date';
 import { ICalendar } from '@hooks/useCalendar';
 

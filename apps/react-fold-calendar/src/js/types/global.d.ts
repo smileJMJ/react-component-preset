@@ -11,6 +11,5 @@ declare global {
     element?: string | HTMLElement | null; // browser 버전일 때, calendar 주입할 dom element
     useInitWeekType?: boolean; // calendar 로드 시 'week' 타입으로 노출할 지 여부
     useShowContent?: boolean; // calendar 하단에 일자 별 콘텐츠 영역 노출할지 여부
-    handleDateClick?: (dateObj?: IDataItem[]) => void; // date 클릭 시 실행할 콜백 함수
   }
 }
