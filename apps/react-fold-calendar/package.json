@@ -16,7 +16,7 @@
     "tsc": "tsc",
     "dev": "node esbuild.config.js mode=development",
     "build": "tsc & node esbuild.config.js mode=production",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "prettier": "@rcp/config-prettier/.prettierrc.json",
   "keywords": [],
