@@ -5,7 +5,7 @@ In particular, you can check the date by month/week by folding and unfolding the
 
 <br/>
 
-<img src="./readme/screenshot.gif" alt="" />
+![screenshot](https://github.com/user-attachments/assets/04b7b3c3-3cbb-4859-b326-f0a46a5db3df)
 
 <br/>
 <br/>
