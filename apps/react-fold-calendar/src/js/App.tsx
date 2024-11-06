@@ -6,7 +6,7 @@ import Content from '@components/content/Content';
 import useCalendar from '@hooks/useCalendar';
 import useScheduleData from '@hooks/useScheduleData';
 
-const ReactFoldCalendar = forwardRef(({ options }: { options: IOption }, ref: Ref<HTMLDivElement>) => {
+const ReactFoldCalendar = forwardRef(({ options = {} }: { options: IOption }, ref: Ref<HTMLDivElement>) => {
   return (
     <GlobalContext.Provider value={useCalendar({ options })}>
       <ScheduleDataContext.Provider value={useScheduleData({ data: options?.data ?? [] })}>

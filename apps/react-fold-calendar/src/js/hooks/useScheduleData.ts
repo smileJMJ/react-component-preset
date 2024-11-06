@@ -44,7 +44,7 @@ const useScheduleData = ({ data }: { data: IDataItem[] }): IScheduleData => {
     const { dataMap, dataByDateMap } = setDataByDate(data);
     setDataMap(dataMap);
     setDataByDateMap(dataByDateMap);
-  }, [data]);
+  }, []);
 
   // dataMap & dataByDateMap 초기화
   const resetData = useCallback(() => {

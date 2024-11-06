@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { CAL_TYPE } from '@constants/calendar';
 import { setDateObj } from '@utils/date';
 import { setOption } from '@utils/ui';
@@ -30,10 +30,6 @@ const useCalendar = ({ options }: { options: IOption }): ICalendar => {
   const [drawDate, setDrawDate] = useState<ICalendar['drawDate']>(initialDate);
   const [l10n] = useState<ICalendar['l10n']>(lang === 'ko' ? l10nKo : l10nEn);
   const { device, isPc } = useDevice();
-
-  useEffect(() => {
-    console.log('== device ==', device, isPc);
-  }, [device]);
 
   return {
     type,

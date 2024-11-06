@@ -12,7 +12,7 @@ const moduleBuildOption = {
   //   'dynamic-import': true,
   // },
   banner: {
-    js: `/* ${pkg.name}-${pkg.version} */`,
+    js: `/* ${pkg.name}-${pkg.version}-${new Date().getTime()} */`,
   },
 };
 
@@ -23,7 +23,7 @@ const browserBuildOption = {
   // },
   external: ['*.css'],
   banner: {
-    js: `/* ${pkg.name}-${pkg.version} */`,
+    js: `/* ${pkg.name}-${pkg.version}-${new Date().getTime()} */`,
   },
 };
 
@@ -31,7 +31,7 @@ const cssBuildOption = {
   entryPoints: [{ in: './src/css/calendar.css', out: 'calendar' }],
   loader: { '.svg': 'dataurl' },
   banner: {
-    css: `/* ${pkg.name}-${pkg.version} */`,
+    css: `/* ${pkg.name}-${pkg.version}-${new Date().getTime()} */`,
   },
 };
 
