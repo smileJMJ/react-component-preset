@@ -1,16 +1,20 @@
 {
   "name": "react-fold-calendar",
   "version": "1.1.1-SNAPSHOT",
-  "description": "",
+  "description": "react-fold-calendar provides a calendar that can be swiped by month/week. In particular, you can check the date by month/week by folding and unfolding the calendar.",
   "main": "dist/index.js",
   "type": "module",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.6.0"
+  },
   "files": [
     "dist/*"
   ],
   "exports": {
-    "./browser": "./dist/browser.js",
-    "./module": "./dist/index.js",
-    "./css": "./dist/calendar.css"
+    "./browser": "./dist/browser/reactFoldCalendar.js",
+    "./module": "./dist/module/reactFoldCalendar.js",
+    "./css": "./dist/css/reactFoldCalendar.css"
   },
   "scripts": {
     "tsc": "tsc",
@@ -19,9 +23,23 @@
     "test": "jest"
   },
   "prettier": "@rcp/config-prettier/.prettierrc.json",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "react-fold-calendar",
+    "react-calendar",
+    "react-swipeable",
+    "react-component-preset",
+    "react-component"
+  ],
+  "author": "JMJ <mjj0324@gmail.com> (https://github.com/smileJMJ)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smileJMJ/react-component-preset/tree/main/apps/react-fold-calendar"
+  },
+  "bugs": {
+    "url": "https://github.com/smileJMJ/react-component-preset/issues"
+  },
+  "homepage": "https://github.com/smileJMJ/react-component-preset/tree/main/apps/react-fold-calendar#readme",
   "devDependencies": {
     "@rcp/config-esbuild": "workspace:1.0.0",
     "@rcp/config-eslint": "workspace:1.0.0",
