@@ -1,5 +1,5 @@
 import { createContext, useContext } from 'react';
-import type { IScheduleData } from '@hooks/useScheduleData';
+import type { IScheduleData } from 'react-fold-calendar/hooks/useScheduleData';
 
 const ScheduleDataContext = createContext<IScheduleData | null>(null);
 

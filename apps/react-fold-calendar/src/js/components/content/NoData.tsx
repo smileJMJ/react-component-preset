@@ -1,4 +1,4 @@
-import { useGlobalContext } from '@contexts/GlobalContext';
+import { useGlobalContext } from 'react-fold-calendar/contexts/GlobalContext';
 
 const NoData = () => {
   const { l10n } = useGlobalContext()!;

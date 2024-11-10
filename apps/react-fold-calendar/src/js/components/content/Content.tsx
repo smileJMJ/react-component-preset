@@ -1,8 +1,8 @@
 import { useMemo, useCallback } from 'react';
-import { useGlobalContext } from '@contexts/GlobalContext';
-import { useScheduleContext } from '@contexts/ScheduleDataContext';
-import List from '@components/content/List';
-import NoData from '@components/content/NoData';
+import { useGlobalContext } from 'react-fold-calendar/contexts/GlobalContext';
+import { useScheduleContext } from 'react-fold-calendar/contexts/ScheduleDataContext';
+import List from 'react-fold-calendar/components/content/List';
+import NoData from 'react-fold-calendar/components/content/NoData';
 import { setZeroPad } from '@rcp/react-common-preset/utils/string';
 
 const Content = () => {

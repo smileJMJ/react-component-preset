@@ -1,7 +1,7 @@
 import { Fragment, useCallback } from 'react';
-import { useGlobalContext } from '@contexts/GlobalContext';
-import { setDateObj, compareDateObj } from '@utils/date';
-import type { IDateObj } from '@type/date';
+import { useGlobalContext } from 'react-fold-calendar/contexts/GlobalContext';
+import { setDateObj, compareDateObj } from 'react-fold-calendar/utils/date';
+import type { IDateObj } from 'react-fold-calendar/types/date';
 
 interface IDateProps {
   dateObj: IDateObj;

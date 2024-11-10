@@ -1,5 +1,8 @@
-import { useEffect, useState, useMemo, useCallback } from "react";
-import { DEVICE_TYPE, MOBILE_USER_AGENT } from "@constants/device";
+import { useEffect, useState, useMemo } from "react";
+import {
+  DEVICE_TYPE,
+  MOBILE_USER_AGENT,
+} from "@rcp/react-common-preset/constants/device";
 
 export interface IDevice {
   device: (typeof DEVICE_TYPE)[keyof typeof DEVICE_TYPE];
@@ -33,7 +36,7 @@ const useDevice = () => {
     // resize
     window.addEventListener("resize", handleResize);
 
-    () => window.removeEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return {

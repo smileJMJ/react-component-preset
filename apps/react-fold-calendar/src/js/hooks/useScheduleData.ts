@@ -1,7 +1,7 @@
 import { useEffect, useState, useCallback } from 'react';
-import { getAllDateArr, setDateObj } from '@utils/date';
-import { CATEGORY } from '@constants/data';
-import type { IDateObj } from '@type/date';
+import { getAllDateArr, setDateObj } from 'react-fold-calendar/utils/date';
+import { CATEGORY } from 'react-fold-calendar/constants/data';
+import type { IDateObj } from 'react-fold-calendar/types/date';
 
 export interface IDataItem {
   startDate: string | number; // string: ISO, number: timestamp

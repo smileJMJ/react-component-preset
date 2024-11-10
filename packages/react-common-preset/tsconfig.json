@@ -5,12 +5,12 @@
     "declarationDir": "dist",
     "baseUrl": "src/",
     "paths": {
-      "@components/*": ["js/components/*"],
-      "@constants/*": ["js/constants/*"],
-      "@utils/*": ["js/utils/*"],
-      "@type/*": ["js/types/*"],
-      "@img/*": ["assets/img/*"],
-      "@svg/*": ["assets/svg/*"]
+      "@rcp/react-common-preset/components/*": ["./js/components/*"],
+      "@rcp/react-common-preset/constants/*": ["./js/constants/*"],
+      "@rcp/react-common-preset/utils/*": ["./js/utils/*"],
+      "@rcp/react-common-preset/types/*": ["./js/types/*"],
+      "@rcp/react-common-preset/img/*": ["./assets/img/*"],
+      "@rcp/react-common-preset/svg/*": ["./assets/svg/*"]
     }
   },
   "include": ["src"],

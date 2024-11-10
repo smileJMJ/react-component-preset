@@ -1,6 +1,6 @@
-import { setZeroPad } from '../../../../../packages/react-common-preset/src/js/utils/string';
-import { DAY_LENGTH, CALC_DIR, MAX_MONTH, MIN_MONTH } from '@constants/calendar';
-import type { IDateObj } from '@type/date';
+import { setZeroPad } from '@rcp/react-common-preset/utils/string';
+import { DAY_LENGTH, CALC_DIR, MAX_MONTH, MIN_MONTH } from 'react-fold-calendar/constants/calendar';
+import type { IDateObj } from 'react-fold-calendar/types/date';
 
 // year값에 따른 월별 총 일수 반환 (윤달 계산)
 export const getAllDateArr = (year: number) => {

@@ -1,11 +1,11 @@
 import { Fragment, useMemo, useCallback } from 'react';
-import { useGlobalContext } from '@contexts/GlobalContext';
-import useSwipeable from '@hooks/useSwipeable';
-import Date from '@components/calendar/Date';
-import { CALC_DIR } from '@constants/calendar';
-import { setWeekDateArr, setCalcWeekDateObj } from '@utils/date';
-import type { IDateObj } from '@type/date';
-import type { IDataByDateMap } from '@hooks/useScheduleData';
+import { useGlobalContext } from 'react-fold-calendar/contexts/GlobalContext';
+import useSwipeable from 'react-fold-calendar/hooks/useSwipeable';
+import Date from 'react-fold-calendar/components/calendar/Date';
+import { CALC_DIR } from 'react-fold-calendar/constants/calendar';
+import { setWeekDateArr, setCalcWeekDateObj } from 'react-fold-calendar/utils/date';
+import type { IDateObj } from 'react-fold-calendar/types/date';
+import type { IDataByDateMap } from 'react-fold-calendar/hooks/useScheduleData';
 
 interface IWeekProps {
   dataByDateMap: IDataByDateMap;

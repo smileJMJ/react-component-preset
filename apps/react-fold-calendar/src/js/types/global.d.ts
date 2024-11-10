@@ -1,5 +1,5 @@
 import '@rcp/config-typescript/global.d.ts';
-import type { IDataItem } from '@hooks/useScheduleData';
+import type { IDataItem } from 'react-fold-calendar/hooks/useScheduleData';
 
 declare global {
   interface Window {

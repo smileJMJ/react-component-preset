@@ -12,15 +12,48 @@ In particular, you can check the date by month/week by folding and unfolding the
 
 ## options
 
-| 1depth  | 2depth          | type                                | required | description                                                              |
-| ------- | --------------- | ----------------------------------- | -------- | ------------------------------------------------------------------------ |
-| options | data            | `IDataItem[]`                       | X        | schedule data                                                            |
-|         | element         | `string` or `HTMLElement` or `null` | X        | When using the browser version, dom element to inject calendar           |
-|         | useInitWeekType | boolean                             | X        | Whether to display as 'week' type when loading calendar                  |
-|         | useShowContent  | boolean                             | X        | Whether to expose the content area by date at the bottom of the calendar |
-
-<br/>
-<br/>
+<table>
+  <tr>
+    <th>1depth</th>
+    <th>2depth</th>
+    <th>type</th>
+    <th>required</th>
+    <th>description</th>
+  </tr>
+  <tr>
+    <td rowspan="4">options</td>
+    <td>data</td>
+    <td><pre><code>{
+  startDate: string | number; // string: ISO, number: timestamp
+  endDate: string | number;
+  title: string;
+  id?: string | number;
+  description?: string;
+  category?: string;
+  period?: number;
+}[]</code></pre></td>
+    <td>X</td>
+    <td>schedule data</td>
+  </tr> 
+  <tr>
+    <td>element</td>
+    <td>string | HTMLElement | null</td>
+    <td>X</td>
+    <td>When using the browser version, dom element to inject calendar</td>
+  </tr>
+  <tr>
+    <td>useInitWeekType</td>
+    <td>boolean</td>
+    <td>X</td>
+    <td>Whether to display as 'week' type when loading calendar</td>
+  </tr>
+  <tr>
+    <td>useShowContent</td>
+    <td>boolean</td>
+    <td>X</td>
+    <td>Whether to expose the content area by date at the bottom of the calendar</td>
+  </tr>
+</table>
 
 ## exports file
 
@@ -28,7 +61,7 @@ In particular, you can check the date by month/week by folding and unfolding the
 | -------------------------------- | ---------------------------------- | ----------------------------------------------------------------------------------- |
 | `./module/reactFoldCalendar.js`  | `react-fold-calendar/module`       | It can be used by importing it as a module type.                                    |
 | `./browser/reactFoldCalendar.js` | `window.createReactFoldCalendar()` | After importing the browser.js file, you can call window.createReactFoldCalendar(). |
-| `./css/reactFoldCalendar.css`    | `calendar.css`                     | You can customize the design of your choice with the example style file.            |
+| `./css/reactFoldCalendar.css`    | `reactFoldCalendar.css`            | You can customize the design of your choice with the example style file.            |
 
 <br/>
 <br/>
@@ -83,7 +116,7 @@ const App = () => {
 ```
 <div id="app-browser"></div>
 
-<script src="./browser.js"></script>
+<script src="./reactFoldCalendar.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     window.createReactFoldCalendar({

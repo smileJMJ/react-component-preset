@@ -1,5 +1,5 @@
 import { createContext, useContext } from 'react';
-import { ICalendar } from '@hooks/useCalendar';
+import { ICalendar } from 'react-fold-calendar/hooks/useCalendar';
 
 const GlobalContext = createContext<ICalendar | null>(null);
 

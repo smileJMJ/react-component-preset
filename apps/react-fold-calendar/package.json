@@ -17,9 +17,9 @@
     "./css": "./dist/css/reactFoldCalendar.css"
   },
   "scripts": {
-    "tsc": "tsc",
+    "tsc": "npx tsc",
     "dev": "node esbuild.config.js mode=development",
-    "build": "tsc & node esbuild.config.js mode=production",
+    "build": "node esbuild.config.js mode=production & npx pnpm run tsc",
     "test": "jest"
   },
   "prettier": "@rcp/config-prettier/.prettierrc.json",
@@ -47,7 +47,8 @@
     "@rcp/config-typescript": "workspace:1.0.0",
     "@rcp/react-common-preset": "workspace:1.0.0",
     "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0"
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.5.4"
   },
   "dependencies": {
     "react": "^18.3.1",

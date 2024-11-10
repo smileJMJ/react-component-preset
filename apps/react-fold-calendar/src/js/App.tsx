@@ -1,10 +1,10 @@
 import { forwardRef, Fragment, type Ref } from 'react';
-import GlobalContext from '@contexts/GlobalContext';
-import ScheduleDataContext from '@contexts/ScheduleDataContext';
-import Calendar from '@components/calendar/Calendar';
-import Content from '@components/content/Content';
-import useCalendar from '@hooks/useCalendar';
-import useScheduleData from '@hooks/useScheduleData';
+import GlobalContext from 'react-fold-calendar/contexts/GlobalContext';
+import ScheduleDataContext from 'react-fold-calendar/contexts/ScheduleDataContext';
+import Calendar from 'react-fold-calendar/components/calendar/Calendar';
+import Content from 'react-fold-calendar/components/content/Content';
+import useCalendar from 'react-fold-calendar/hooks/useCalendar';
+import useScheduleData from 'react-fold-calendar/hooks/useScheduleData';
 
 const ReactFoldCalendar = forwardRef(({ options = {} }: { options: IOption }, ref: Ref<HTMLDivElement>) => {
   return (

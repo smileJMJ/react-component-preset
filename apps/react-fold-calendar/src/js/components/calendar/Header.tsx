@@ -1,10 +1,10 @@
 import { Fragment, useCallback } from 'react';
-import { useGlobalContext } from '@contexts/GlobalContext';
-import { CAL_TYPE, CALC_DIR } from '@constants/calendar';
-import { setCalcMonthDateObj, setCalcWeekDateObj } from '@utils/date';
+import { useGlobalContext } from 'react-fold-calendar/contexts/GlobalContext';
+import { CAL_TYPE, CALC_DIR } from 'react-fold-calendar/constants/calendar';
+import { setCalcMonthDateObj, setCalcWeekDateObj } from 'react-fold-calendar/utils/date';
 import { setZeroPad } from '@rcp/react-common-preset/utils/string';
-import type { IDateObj } from '@type/date';
-import { ICalendar } from '@hooks/useCalendar';
+import type { IDateObj } from 'react-fold-calendar/types/date';
+import { ICalendar } from 'react-fold-calendar/hooks/useCalendar';
 
 const YMComponent = ({ type, l10n, drawDate, setSelectedDate }: Pick<ICalendar, 'type' | 'l10n' | 'drawDate' | 'setSelectedDate'>) => {
   const { prevMonth, nextMonth, prevWeek, nextWeek } = l10n?.calendar || {};
