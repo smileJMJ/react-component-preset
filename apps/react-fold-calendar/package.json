@@ -13,8 +13,12 @@
   ],
   "exports": {
     "./browser": "./dist/browser/reactFoldCalendar.js",
-    "./module": "./dist/module/reactFoldCalendar.js",
-    "./css": "./dist/css/reactFoldCalendar.css"
+    "./module": {
+      "require": "./dist/module/reactFoldCalendar.cjs",
+      "default": "./dist/module/reactFoldCalendar.js"
+    },
+    "./css": "./dist/css/reactFoldCalendar.css",
+    "./types": "./dist/types/reactFoldCalendar.d.ts"
   },
   "scripts": {
     "tsc": "npx tsc",

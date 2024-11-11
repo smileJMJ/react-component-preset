@@ -16,6 +16,12 @@ const moduleBuildOption = {
   },
 };
 
+const moduleCjsBuildOption = {
+  ...moduleBuildOption,
+  format: 'cjs',
+  outExtension: { '.js': '.cjs' },
+};
+
 const browserBuildOption = {
   entryPoints: [{ in: './src/js/browser.tsx', out: './browser/reactFoldCalendar' }],
   // supported: {
@@ -69,7 +75,7 @@ try {
   } else {
     // PROD - index (module)
     runBuild(moduleBuildOption);
-
+    runBuild(moduleCjsBuildOption);
     // PROD - browser
     runBuild(browserBuildOption);
 
