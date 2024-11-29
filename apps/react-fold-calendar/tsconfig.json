@@ -1,12 +1,10 @@
 {
-  "extends": "@rcp/config-typescript/tsconfig.base.json",
+  "extends": "../../packages/config-typescript/tsconfig.base.json",
   "compilerOptions": {
-    "outDir": "dist/types",
-    "outFile": "dist/types/reactFoldCalendar.d.ts",
-    "declarationDir": null,
-    "baseUrl": "src/",
-    "typeRoots": ["./node_modules/@types", "./src/js/types"],
+    "declarationDir": "dist/types",
+    "baseUrl": "./src",
     "paths": {
+      "react-fold-calendar/js/*": ["js/*"],
       "react-fold-calendar/components/*": ["js/components/*"],
       "react-fold-calendar/hooks/*": ["js/hooks/*"],
       "react-fold-calendar/contexts/*": ["js/contexts/*"],
@@ -19,6 +17,6 @@
       "react-fold-calendar/svg/*": ["assets/svg/*"]
     }
   },
-  "include": ["src", "src/js/types/global.d.ts", "../../packages/react-common-preset/src/js/utils/string.ts"],
+  "include": ["./src"],
   "exclude": ["node_modules"]
 }

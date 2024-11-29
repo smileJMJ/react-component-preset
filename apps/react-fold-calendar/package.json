@@ -12,13 +12,13 @@
     "dist/*"
   ],
   "exports": {
-    "./browser": "./dist/browser/reactFoldCalendar.js",
-    "./module": {
+    ".": {
       "require": "./dist/module/reactFoldCalendar.cjs",
-      "default": "./dist/module/reactFoldCalendar.js"
+      "default": "./dist/module/reactFoldCalendar.js",
+      "types": "./dist/types/index.d.ts"
     },
-    "./css": "./dist/css/reactFoldCalendar.css",
-    "./types": "./dist/types/reactFoldCalendar.d.ts"
+    "./browser": "./dist/browser/reactFoldCalendar.js",
+    "./css": "./dist/css/reactFoldCalendar.css"
   },
   "scripts": {
     "tsc": "npx tsc",
@@ -55,12 +55,10 @@
     "typescript": "^5.5.4"
   },
   "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
     "react-swipeable": "^7.0.1"
   },
   "peerDependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }

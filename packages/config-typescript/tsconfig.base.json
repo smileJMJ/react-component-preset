@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
+    // Url 관련 옵션은 각 서비스의 tsconfig.json에서 설정(relative path 사용 시 config-typescript 기준으로 설정됨)
     "target": "es5",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "jsx": "react-jsx",
@@ -9,9 +9,8 @@
     "resolveJsonModule": true,
     "allowJs": true,
     "strict": true,
-    "outDir": "./dist",
     "declaration": true,
-    "declarationDir": "./dist/types",
+    "declarationMap": true,
     "emitDeclarationOnly": true,
     "noEmit": false,
     "allowImportingTsExtensions": true
