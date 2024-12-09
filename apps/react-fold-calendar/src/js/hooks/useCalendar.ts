@@ -6,6 +6,7 @@ import useDevice, { type IDevice } from '@rcp/react-common-preset/hooks/useDevic
 import { getLanguage } from '@rcp/react-common-preset/utils/ui';
 import l10nKo from 'react-fold-calendar/l10n/ko.json';
 import l10nEn from 'react-fold-calendar/l10n/en.json';
+import type { IOption } from 'react-fold-calendar/types/index';
 import type { IDateObj } from 'react-fold-calendar/types/date';
 
 export interface ICalendar {

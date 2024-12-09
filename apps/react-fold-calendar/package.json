@@ -18,7 +18,8 @@
       "types": "./dist/types/index.d.ts"
     },
     "./browser": "./dist/browser/reactFoldCalendar.js",
-    "./css": "./dist/css/reactFoldCalendar.css"
+    "./css": "./dist/css/reactFoldCalendar.css",
+    "./types": "./dist/types/types/index.d.ts"
   },
   "scripts": {
     "tsc": "npx tsc",

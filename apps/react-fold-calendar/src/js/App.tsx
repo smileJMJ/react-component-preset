@@ -5,6 +5,7 @@ import Calendar from 'react-fold-calendar/components/calendar/Calendar';
 import Content from 'react-fold-calendar/components/content/Content';
 import useCalendar from 'react-fold-calendar/hooks/useCalendar';
 import useScheduleData from 'react-fold-calendar/hooks/useScheduleData';
+import type { IOption } from 'react-fold-calendar/types/index';
 
 const ReactFoldCalendar = forwardRef(({ options = {} }: { options: IOption }, ref: Ref<HTMLDivElement>) => {
   return (

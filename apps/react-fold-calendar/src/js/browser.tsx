@@ -1,6 +1,7 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App';
+import type { Window, IOption } from 'react-fold-calendar/types/index';
 
 // make directly react-fold-calendar
 export const createReactFoldCalendar = (options: IOption) => {
@@ -23,4 +24,5 @@ export const createReactFoldCalendar = (options: IOption) => {
   }
 };
 
-window.createReactFoldCalendar = createReactFoldCalendar;
+const w = window as unknown as Window;
+w['createReactFoldCalendar'] = createReactFoldCalendar as Window['createReactFoldCalendar'];
