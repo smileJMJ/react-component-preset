@@ -2,19 +2,20 @@
   "extends": "../../packages/config-typescript/tsconfig.base.json",
   "compilerOptions": {
     "declarationDir": "dist/types",
-    "baseUrl": "./src",
+    "baseUrl": ".",
     "paths": {
-      "react-fold-calendar/js/*": ["js/*"],
-      "react-fold-calendar/components/*": ["js/components/*"],
-      "react-fold-calendar/hooks/*": ["js/hooks/*"],
-      "react-fold-calendar/contexts/*": ["js/contexts/*"],
-      "react-fold-calendar/constants/*": ["js/constants/*"],
-      "react-fold-calendar/utils/*": ["js/utils/*"],
-      "react-fold-calendar/l10n/*": ["js/l10n/*"],
-      "react-fold-calendar/types/*": ["js/types/*"], // @types로 지정 후 import type시 `Cannot import type declaration files.` 에러남
-      "react-fold-calendar/css/*": ["css/*"],
-      "react-fold-calendar/img/*": ["assets/img/*"],
-      "react-fold-calendar/svg/*": ["assets/svg/*"]
+      "@rfc/*": ["./src/*"],
+      "@rfc/js/*": ["./src/js/*"],
+      "@rfc/components/*": ["./src/js/components/*"],
+      "@rfc/hooks/*": ["./src/js/hooks/*"],
+      "@rfc/contexts/*": ["./src/js/contexts/*"],
+      "@rfc/constants/*": ["./src/js/constants/*"],
+      "@rfc/utils/*": ["./src/js/utils/*"],
+      "@rfc/l10n/*": ["./src/js/l10n/*"],
+      "@rfc/types/*": ["./src/js/types/*"], // @types로 지정 후 import type시 `Cannot import type declaration files.` 에러남
+      "@rfc/css/*": ["./src/css/*"],
+      "@rfc/img/*": ["./src/assets/img/*"],
+      "@rfc/svg/*": ["./src/assets/svg/*"]
     }
   },
   "include": ["./src"],

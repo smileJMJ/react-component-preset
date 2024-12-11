@@ -1,11 +1,11 @@
 import { useCallback, useMemo, Fragment } from 'react';
-import { useGlobalContext } from 'react-fold-calendar/contexts/GlobalContext';
-import useSwipeable from 'react-fold-calendar/hooks/useSwipeable';
-import Date from 'react-fold-calendar/components/calendar/Date';
-import { CALC_DIR } from 'react-fold-calendar/constants/calendar';
-import { setMonthDateArr, setCalcMonthDateObj } from 'react-fold-calendar/utils/date';
-import type { IDateObj } from 'react-fold-calendar/types/date';
-import type { IDataByDateMap } from 'react-fold-calendar/hooks/useScheduleData';
+import { useGlobalContext } from '@rfc/contexts/GlobalContext';
+import useSwipeable from '@rfc/hooks/useSwipeable';
+import Date from '@rfc/components/calendar/Date';
+import { CALC_DIR } from '@rfc/constants/calendar';
+import { setMonthDateArr, setCalcMonthDateObj } from '@rfc/utils/date';
+import type { IDateObj } from '@rfc/types/date';
+import type { IDataByDateMap } from '@rfc/hooks/useScheduleData';
 
 interface IMonthProps {
   dataByDateMap: IDataByDateMap;

@@ -1,5 +1,5 @@
 import { Fragment } from 'react/jsx-runtime';
-import type { IDataItem } from 'react-fold-calendar/hooks/useScheduleData';
+import type { IDataItem } from '@rfc/hooks/useScheduleData';
 
 const Item = ({ item }: { item: IDataItem }) => {
   const { title, description } = item ?? {};

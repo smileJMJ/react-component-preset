@@ -59,7 +59,7 @@ In particular, you can check the date by month/week by folding and unfolding the
 
 | file                             | exports                            | description                                                                         |
 | -------------------------------- | ---------------------------------- | ----------------------------------------------------------------------------------- |
-| `./module/reactFoldCalendar.js`  | `react-fold-calendar/module`       | It can be used by importing it as a module type.                                    |
+| `./module/reactFoldCalendar.js`  | `react-fold-calendar`              | It can be used by importing it as a module type.                                    |
 | `./browser/reactFoldCalendar.js` | `window.createReactFoldCalendar()` | After importing the browser.js file, you can call window.createReactFoldCalendar(). |
 | `./css/reactFoldCalendar.css`    | `reactFoldCalendar.css`            | You can customize the design of your choice with the example style file.            |
 
@@ -71,7 +71,7 @@ In particular, you can check the date by month/week by folding and unfolding the
 ### module
 
 ```
-import ReactFoldCalendar from "react-fold-calendar/module";
+import ReactFoldCalendar from "react-fold-calendar";
 import "react-fold-calendar/css"; // css for reference
 
 const App = () => {

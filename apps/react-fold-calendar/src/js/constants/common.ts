@@ -1,4 +1,4 @@
-import type { IOption } from 'react-fold-calendar/types/index';
+import type { IOption } from '@rfc/types/index';
 
 export const DEFAULT_OPTION: IOption = {
   useInitWeekType: true,

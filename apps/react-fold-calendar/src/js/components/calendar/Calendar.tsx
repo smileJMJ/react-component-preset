@@ -1,10 +1,10 @@
 import { useEffect, useCallback } from 'react';
-import Header from 'react-fold-calendar/components/calendar/Header';
-import Month from 'react-fold-calendar/components/calendar/Month';
-import Week from 'react-fold-calendar/components/calendar/Week';
-import { useGlobalContext } from 'react-fold-calendar/contexts/GlobalContext';
-import { useScheduleContext } from 'react-fold-calendar/contexts/ScheduleDataContext';
-import { CAL_TYPE } from 'react-fold-calendar/constants/calendar';
+import Header from '@rfc/components/calendar/Header';
+import Month from '@rfc/components/calendar/Month';
+import Week from '@rfc/components/calendar/Week';
+import { useGlobalContext } from '@rfc/contexts/GlobalContext';
+import { useScheduleContext } from '@rfc/contexts/ScheduleDataContext';
+import { CAL_TYPE } from '@rfc/constants/calendar';
 
 const Calendar = () => {
   const { l10n, type, selectedDate, setType, setDrawDate } = useGlobalContext()!;

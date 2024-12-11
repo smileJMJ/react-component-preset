@@ -95,14 +95,14 @@
 
 .rfc-calendar .rfc-header-btn button.btn-month-minus::before,
 .rfc-calendar .rfc-header-btn button.btn-week-minus::before {
-  mask-image: url('react-fold-calendar/svg/icon-arrow-left.svg');
-  -webkit-mask-image: url('react-fold-calendar/svg/icon-arrow-left.svg');
+  mask-image: url('@rfc/svg/icon-arrow-left.svg');
+  -webkit-mask-image: url('@rfc/svg/icon-arrow-left.svg');
 }
 
 .rfc-calendar .rfc-header-btn button.btn-month-plus::before,
 .rfc-calendar .rfc-header-btn button.btn-week-plus::before {
-  mask-image: url('react-fold-calendar/svg/icon-arrow-right.svg');
-  -webkit-mask-image: url('react-fold-calendar/svg/icon-arrow-right.svg');
+  mask-image: url('@rfc/svg/icon-arrow-right.svg');
+  -webkit-mask-image: url('@rfc/svg/icon-arrow-right.svg');
 }
 
 .rfc-calendar .rfc-header-day {
@@ -227,8 +227,8 @@
   width: 18px;
   height: 18px;
   background-color: #333;
-  mask-image: url('react-fold-calendar/svg/icon-fold.svg');
-  -webkit-mask-image: url('react-fold-calendar/svg/icon-fold.svg');
+  mask-image: url('@rfc/svg/icon-fold.svg');
+  -webkit-mask-image: url('@rfc/svg/icon-fold.svg');
   mask-size: 100% 100%;
   -webkit-mask-size: 100% 100%;
   mask-position: center center;

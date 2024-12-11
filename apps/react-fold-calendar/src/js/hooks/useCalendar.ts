@@ -1,13 +1,13 @@
 import { useState } from 'react';
-import { CAL_TYPE } from 'react-fold-calendar/constants/calendar';
-import { setDateObj } from 'react-fold-calendar/utils/date';
-import { setOption } from 'react-fold-calendar/utils/ui';
+import { CAL_TYPE } from '@rfc/constants/calendar';
+import { setDateObj } from '@rfc/utils/date';
+import { setOption } from '@rfc/utils/ui';
 import useDevice, { type IDevice } from '@rcp/react-common-preset/hooks/useDevice';
 import { getLanguage } from '@rcp/react-common-preset/utils/ui';
-import l10nKo from 'react-fold-calendar/l10n/ko.json';
-import l10nEn from 'react-fold-calendar/l10n/en.json';
-import type { IOption } from 'react-fold-calendar/types/index';
-import type { IDateObj } from 'react-fold-calendar/types/date';
+import l10nKo from '@rfc/l10n/ko.json';
+import l10nEn from '@rfc/l10n/en.json';
+import type { IOption } from '@rfc/types/index';
+import type { IDateObj } from '@rfc/types/date';
 
 export interface ICalendar {
   type: (typeof CAL_TYPE)[keyof typeof CAL_TYPE];

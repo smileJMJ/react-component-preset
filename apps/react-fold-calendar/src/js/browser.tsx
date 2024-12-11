@@ -1,7 +1,7 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App';
-import type { Window, IOption } from 'react-fold-calendar/types/index';
+import type { Window, IOption } from '@rfc/types/index';
 
 // make directly react-fold-calendar
 export const createReactFoldCalendar = (options: IOption) => {
