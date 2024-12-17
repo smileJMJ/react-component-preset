@@ -1,4 +1,4 @@
-import '@rcp/config-typescript/global.d.ts';
+// import '@rcp/config-typescript/global.d.ts';
 import type { IDataItem } from '@rfc/hooks/useScheduleData';
 
 export interface Window {

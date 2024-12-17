@@ -18,6 +18,6 @@
       "@rfc/svg/*": ["./src/assets/svg/*"]
     }
   },
-  "include": ["./src"],
+  "include": ["./src", "../../packages/config-typescript/global.d.ts"],
   "exclude": ["node_modules"]
 }
