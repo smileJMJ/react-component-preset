@@ -8,6 +8,7 @@
     "tsc": "npx turbo run tsc",
     "dev": "npx turbo run dev",
     "build": "npx turbo run build",
+    "publish": "npx turbo run publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
