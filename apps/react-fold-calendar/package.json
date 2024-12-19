@@ -25,7 +25,7 @@
     "tsc": "npx tspc",
     "dev": "node esbuild.config.js mode=development",
     "build": "node esbuild.config.js mode=production & npx pnpm run tsc",
-    "publish": "npx pnpm run build --filter=react-fold-calendar & npx pnpm publish --filter=react-fold-calendar",
+    "publish": "node esbuild.config.js mode=production & npx pnpm run tsc & npx pnpm publish --filter=react-fold-calendar",
     "test": "jest"
   },
   "prettier": "@rcp/config-prettier/.prettierrc.json",
