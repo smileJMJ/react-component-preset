@@ -10,7 +10,13 @@ In particular, you can check the date by month/week by folding and unfolding the
 <br/>
 <br/>
 
-## options
+## Demo
+
+[🌈Here](https://demo-web-smilemj.vercel.app/)
+<br/>
+<br/>
+
+## Options
 
 <table>
   <tr>
@@ -55,7 +61,7 @@ In particular, you can check the date by month/week by folding and unfolding the
   </tr>
 </table>
 
-## exports file
+## Files
 
 | file                             | exports                            | description                                                                         |
 | -------------------------------- | ---------------------------------- | ----------------------------------------------------------------------------------- |
@@ -66,9 +72,9 @@ In particular, you can check the date by month/week by folding and unfolding the
 <br/>
 <br/>
 
-## example
+## Example
 
-### module
+### Module
 
 ```
 import ReactFoldCalendar from "react-fold-calendar";
@@ -111,7 +117,7 @@ const App = () => {
 <br/>
 <br/>
 
-### browser
+### Browser
 
 ```
 <div id="app-browser"></div>
@@ -136,6 +142,6 @@ const App = () => {
 <br/>
 <br/>
 
-## etc.
+## Etc.
 
 - l10n provides `ko`, `en`. `en` is the default, except when the `html:lang` value is `ko`.

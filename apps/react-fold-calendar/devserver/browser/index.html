@@ -21,9 +21,13 @@
           useShowContent: true,
           element: '#app-browser',
           data: [
-            { startDate: new Date('2024/10/01 10:00')?.getTime(), endDate: new Date('2024/10/31 19:00')?.getTime(), period: 1, title: '10월 이벤트', description: '10월 정기 이벤트 입니다.' },
-            { startDate: new Date('2024/09/15')?.getTime(), endDate: new Date('2024/10/16')?.getTime(), period: 3, title: '9 ~ 10월 3일 이벤트', description: '9 ~ 10월 3일 단위 정기 이벤트 입니다.' },
-            { startDate: new Date('2024/10/18')?.getTime(), endDate: new Date('2024/10/18')?.getTime(), period: 0, title: '10월 18일 이벤트', description: '반복 없은 10월 18일 이벤트입니다.' },
+            {
+              startDate: new Date()?.getTime(),
+              endDate: new Date()?.getTime() + 1000 * 60 * 60 * 24,
+              period: 1,
+              title: 'Regular Event',
+              description: 'This is a regular event.',
+            },
           ],
         });
       });
