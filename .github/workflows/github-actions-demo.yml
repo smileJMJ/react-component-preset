@@ -34,12 +34,11 @@ jobs:
       # Build the target package
       - name: Build apps/react-fold-calendar
         run: |
-          pnpm run build --filter apps/react-fold-calendar
+          pnpm run build --filter=react-fold-calendar
 
       # Publish the package
       - name: Publish apps/react-fold-calendar
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} # NPM 인증 토큰
         run: |
-          cd apps/react-fold-calendar
-          pnpm publish --access public
+          pnpm publish --filter=react-fold-calendar

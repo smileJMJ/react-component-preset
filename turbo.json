@@ -16,10 +16,6 @@
     },
     "tsc": {
       "cache": false
-    },
-    "publish": {
-      "dependsOn": ["^build"],
-      "cache": false
     }
   }
 }
